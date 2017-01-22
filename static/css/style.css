@@ -1,0 +1,588 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	margin-bottom: .8rem;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Computer Modern Serif", serif;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+body {
+    color: #000000;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(69, 0, 72);
+}
+
+div.post-content a {
+	color: #FFFFFF;
+    background: url("/web_img/hilite.png");
+    margin: -1px -2px;
+    padding: 1px 2px;
+    display: inline;
+	position: relative;
+}
+
+div.post-content a.footnote-backref,
+div.post-content a.footnote-ref {
+	color: rgb(69, 0, 72);
+	background: none;
+}
+
+a strong {
+    color: inherit;
+}
+
+h1,
+h2,
+h3
+{
+    margin-bottom: .75rem;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    border-top: 1px dotted #333333;
+	padding-top: 1.1rem;
+	margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+
+strong {
+    color: #303030;
+}
+
+ul,
+ol
+{
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol
+{
+	margin-bottom: 0rem;
+}
+
+hr {
+    position: relative;
+    margin: 0 0;
+    border: 0;
+    border-top: 1px dotted #000000;
+	margin-bottom: .8rem;
+}
+
+abbr {
+    font-size: 85%;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+}
+
+abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted #e5e5e5;
+}
+
+code,
+pre {
+    font-family: "Computer Modern Typewriter", monospace;
+}
+
+pre code {
+	margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent;
+}
+
+pre span {
+    margin: 0;
+    padding: 0;
+}
+
+.highlight {
+    margin: 0;
+	padding: 0;
+}
+
+.highlight pre {
+    margin-bottom: 0;
+}
+
+.highlighttable {
+	border: none;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+}
+
+.highlighttable tbody {
+	display: block;
+	width: 100%;
+	background: #333333;
+}
+
+.highlighttable tr {
+	display: block;
+    width: 100%;
+}
+
+blockquote {
+    margin: 0;
+	border-left: .4rem solid #444444;
+	padding: .2rem;
+	margin-left: 1rem;
+	padding-left: .5rem;
+	margin-bottom: 0.8rem;
+}
+
+blockquote p:first-child {
+	margin-top: 0;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+	text-align: center;
+	margin: 0;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: .25rem .5rem;
+    border: 1px solid #e5e5e5;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+    background-color: #f9f9f9;
+}
+
+.page,
+.post {
+    margin-bottom: 1rem;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.9);
+    border: 5px solid #FFFFFF;
+    padding: .5rem .4rem;
+    font-family: "Computer Modern Serif", sans-serif;
+    font-size:13pt;
+    line-height:1.25;
+}
+
+.page-title,
+.post-title,
+.post-title a {
+    color: #303030;
+    font-family: "Computer Modern Sans", sans-serif;
+}
+
+.page-title,
+.post-title span {
+    background: #444444;
+    color: #FFFFFF;
+    padding: 0px 7px;
+}
+
+.post-date {
+    display: block;
+    float: right;
+    color: #333333;
+    font-weight: bold;	
+}
+
+.read-more {
+    padding: .2rem .2rem;
+    position: relative;
+    right: 0px;
+    left: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: right;
+    display: block;
+	width: 10em;
+	border-top: 2px dotted rgba(255, 255, 255, 0.9);
+	border-bottom: 2px dotted rgba(255, 255, 255, 0.9);
+	background: rgb(69, 0, 72);	
+	color: #FFFFFF;		
+}
+
+.pagination {
+    overflow: hidden;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    font-family: "Computer Modern Sans", sans-serif;
+    color: #ccc;
+    text-align: center;
+}
+
+.pagination-item {
+    display: block;
+    padding: .5rem;
+    border: 5px solid white;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.pagination-item a {
+    color: rgb(69, 0, 72);
+}
+
+.pagination-item:first-child {
+    margin-bottom: -1px;
+}
+
+a.pagination-item:hover {
+    background-color: #f5f5f5;
+}
+
+
+html {
+    font-family: "Computer Modern Serif", serif;
+}
+
+.sidebar a {
+    color: #fff;
+}
+
+.content {
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.sidebar {
+    text-align: left;
+    padding: 0;
+    margin: 1rem;
+    margin-top: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Computer Modern Serif', serif;
+    font-size: 15pt;
+    background-image: url("/web_img/bg.png");
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.post-title {
+    margin: 0;
+}
+
+div#titlebar {
+    font-family: 'Computer Modern Sans', sans;
+    font-size: 30pt;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: none;
+    padding:0.5rem;
+    margin-top: 0.5rem;
+}
+
+div#bottombar {
+    font-family: 'Computer Modern Sans', sans;
+    font-size: 30pt;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 98%;
+    text-align: right;
+    padding:0.5rem;
+}
+
+div.block {
+    padding: 0.1rem;
+    display: block;
+    margin-bottom: 1rem;
+    border: 5px solid white;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+div.block div.blockcontent p {
+    margin: 3pt;
+    margin-top: 7pt;
+    font-family: "Computer Modern Serif", sans-serif;
+    font-size:13pt;
+    color: #000000;
+}
+
+div.imgblock {
+    display: block;
+    border: 5px solid white;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    height: 18rem;
+}
+
+div.imgblock div {
+    background-size: cover;
+    width: 100%;
+    height:100%;
+    border: 0;
+    opacity: 0.9;
+}
+
+div.blocktitle {
+    margin: 4pt;
+    display: block;
+    font-weight: bold;
+    font-family: 'Computer Modern Sans', sans;
+    font-size: 20pt;
+    margin-bottom: 0px;	
+}
+
+span {
+    margin: 0;
+    padding: 0px 7px;
+}
+
+div.blocktitle span {
+    background: #444444;
+    color: #FFFFFF;
+}
+
+div.blockcontent {
+    margin-top: 0px;
+    margin-left: 20px;
+    line-height: 17pt;
+}
+
+.container {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.post-content {
+    margin: 1rem;
+	text-align: justify;
+    text-justify: auto;
+}
+
+sup { 
+	vertical-align: top; 
+	font-size: 0.7em;
+	margin-left: 0.1em;
+}
+
+td.linenos {
+	border: none;
+	width: 1.5em;
+	padding: 0;
+	padding-right: 0.25em;
+	margin: 0;
+	border-right: 2px dotted #F9f9f9;
+	text-align: right;
+	background: #333333 !important;
+	color: #FFFFFF;
+	float:left;
+}
+
+div.linenodiv {
+	width: 1.25em;
+}
+
+td.linenos pre {
+	background: #333333;
+	margin: 0;
+	padding: 0;
+}
+
+span.math {
+	padding: 0;
+}
+
+div.MathJax_Display {
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+
+div.footnote p {
+	margin-bottom: 0;
+}
+
+td.code {
+	margin: 0;
+	padding: 0;
+    font-size: 85%;
+	overflow: hidden;
+	display: block;
+	width: auto;
+	border: 1px solid #f9f9f9;
+}
+
+pre {
+    display: block;
+	margin: 0;
+    padding: 0;
+    font-size: 11pt;
+    line-height: 1.4;
+    background-color: #f9f9f9;
+}
+
+div.highlight {
+	overflow-x: auto;
+	padding-left: .3rem;
+}
+
+a.main-link {
+	color: #FFFFFF;
+}
+
+div.block a span {
+    color: #FFFFFF;
+    background: url("/web_img/hilite.png");
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+div.block div.sidebarnav a {
+	display: block;
+	border-top: 2px dotted rgba(255, 255, 255, 0.9);
+	border-bottom: 2px dotted rgba(255, 255, 255, 0.9);
+	background: rgb(69, 0, 72);	
+	color: #FFFFFF;	
+	margin: .3rem;
+	margin-left: .7rem;
+	padding: .3rem;
+	padding-left: 1.5rem;
+	font-size: 14pt;
+	text-align: left;
+	font-family: "Computer Modern Sans", sans;
+	font-size: 16pt;
+}
+
+div.block div.sidebarnav {
+	margin-top: .5rem;
+}
+
+div.post-tags {
+	text-align: right;
+	margin-bottom: -0.5rem;
+	margin-top: 0.5rem;
+}
+
+@media (min-width: 60em) {
+    html {
+        font-size: 16px;
+    }
+	
+    .post-content {
+        margin-top: 1.5rem;
+    }
+    
+    div#titlebar {
+        display: block;
+    }
+    
+    .pagination {
+        margin: 3rem 0;
+    }
+
+    .pagination-item {
+        float: left;
+        width: 50%;
+    }
+
+    .pagination-item:first-child {
+        margin-bottom: 0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .pagination-item:last-child {
+        margin-left: -1px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .sidebar {
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 0;
+        width: 18rem;
+        height: auto;
+    }
+    
+    div.block {
+        height: 18rem;
+        width: 18rem;
+    }
+    
+    div.imgblock {
+        height: 18rem;
+        width: 18rem;
+    }
+    
+    .content {
+        max-width: 45rem;
+        margin-right: 20rem;
+        margin-left: auto;
+    }
+    
+    .container {
+        position: relative;        
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 64rem;
+        min-height: 58rem;
+    }
+}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block titlepart %}
+hello. I'm halcy. here's a page:
+{% endblock %}
+
+{% block content %}
+<div class="post">
+    <h1 class="post-title"><span>{{ page.title }}</span></h1>
+    <div class="post-content">
+    {{ page.content }}
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block titlepart %}
+hello. I'm halcy. here's a blog post:
+{% endblock %}
+
+{% block content %}
+<div class="post">
+    <span class="post-date">{{ article.locale_date }}</span>
+    <h1 class="post-title"><span>{{ article.title }}</span></h1>
+    <div class="post-content">
+    {{ article.content }}
+	
+	<div class="post-tags">tagged:
+	{% for tag in article.tags | sort %}
+	<a href="{{ SITEURL }}/{{ tag.url }}"><span>{{ tag }}</span></a>
+	{% endfor %}
+	</div>
+	
+	<h2>Comments</h2>
+    {% include 'fragments/disqus.html' %}
+    </div>
+</div>
+{% endblock %}
+

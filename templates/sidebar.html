@@ -1,0 +1,24 @@
+<div class="sidebar">
+	<div class="block">
+		<div class="blocktitle"><span>links</span></div>
+		<div class="sidebarnav">
+			<a href="/blog/">blog root</a>
+			<a href="/">site root / about me</a>
+			<a href="/blog/pages/projects">semi-successful projects</a>
+			<a href="http://demogroup.vc/">demoscene releases</a>
+			<a href="mailto:lorenzd+blog@gmail.com">contact</a>
+		</div>
+	</div>
+	<div class="imgblock"><a href="{{ SITEURL }}/"><div style="background-image: url('{{PROFILE_IMAGE}}')">&nbsp;</div></a></div>
+	<div class="block">
+		<div class="blocktitle"><span>tags</span></div>
+		<div class="blockcontent">
+			<p>
+			{% for tag, articles in tags | sort %}
+            <a href="{{ SITEURL }}/{{ tag.url }}"><span>{{ tag }}</span></a>
+			{% endfor %}
+			</p>
+		</div>
+	</div>
+	<div class="imgblock"><a href="{{ SITEURL }}/feeds/all.atom.xml"><div style="background-image: url('{{ SITEURL }}/theme/rss-large.png')">&nbsp;</div></a></div>
+</div>

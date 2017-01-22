@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block titlepart %}
+hello. I'm halcy. here's some blog posts, tagged {{ tag }}:
+{% endblock %}
+
+{% block content %}
+    <div class="posts">
+        {% for article in articles_page.object_list %}
+            <div class="post">
+                <span class="post-date">{{ article.locale_date }}</span>
+                <h1 class="post-title">
+                    <a href="{{ SITEURL }}/{{ article.url }}"><span>{{ article.title }}</span></a>
+                </h1>
+                <div class="post-content">
+                    {{ article.summary }}
+                </div>
+                <a class="read-more" href="{{ SITEURL }}/{{ article.url }}">Continue reading »</a>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="pagination">
+
+        {% if articles_page.has_previous() %}
+        {% set num = articles_page.previous_page_number() %}
+        <span class="pagination-item older"><a href="{{ SITEURL }}/tags/{{ tag }}{{ '/page/' ~ num if num > 1 else '' }}">« show me newer posts</a></span>
+        {% else %}
+        <span class="pagination-item older">there are no newer posts</span>
+        {% endif %}
+
+        {% if articles_page.has_next() %}
+        <span class="pagination-item newer"><a href="{{ SITEURL }}/tags/{{ tag }}/page/{{ articles_page.next_page_number() }}">show me older posts »</a></span>
+        {% else %}
+        <span class="pagination-item newer">there are no older posts</span>
+        {% endif %}
+    </div>
+{% endblock %}
