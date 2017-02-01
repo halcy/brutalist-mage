@@ -592,6 +592,8 @@ table.meta-data tr:nth-child(2n+1) td {
 	border: none;
 	background: none;
 	font-size: 12pt;
+	padding-top: 0;
+	padding-bottom: 0.1rem;
 }
 
 table.meta-data {
