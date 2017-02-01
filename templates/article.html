@@ -10,15 +10,16 @@ hello. I'm halcy. here's a blog post:
     <h1 class="post-title"><span>{{ article.title }}</span></h1>
     <div class="post-content">
     {{ article.content }}
-	
-	<div class="post-tags">tagged:
-	{% for tag in article.tags | sort %}
-	<a href="{{ SITEURL }}/{{ tag.url }}"><span>{{ tag }}</span></a>
-	{% endfor %}
-	</div>
-	
-	<h2>Comments</h2>
+    
+    <div class="post-tags">tagged:
+    {% for tag in article.tags | sort %}
+    <a href="{{ SITEURL }}/{{ tag.url }}"><span>{{ tag }}</span></a>
+    {% endfor %}
+    </div>
+    
+    <h2>Comments</h2>
     {% include 'fragments/disqus.html' %}
+    {% include 'fragments/isso.html' %}
     </div>
 </div>
 {% endblock %}

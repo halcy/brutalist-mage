@@ -5,8 +5,8 @@
 }
 
 p {
-	margin: 0;
-	margin-bottom: .8rem;
+    margin: 0;
+    margin-bottom: .8rem;
 }
 
 html,
@@ -29,23 +29,23 @@ body {
 }
 
 a {
-	text-decoration: none;
-	color: rgb(69, 0, 72);
+    text-decoration: none;
+    color: rgb(69, 0, 72);
 }
 
 div.post-content a {
-	color: #FFFFFF;
+    color: #FFFFFF;
     background: url("/web_img/hilite.png");
     margin: -1px -2px;
     padding: 1px 2px;
     display: inline;
-	position: relative;
+    position: relative;
 }
 
 div.post-content a.footnote-backref,
 div.post-content a.footnote-ref {
-	color: rgb(69, 0, 72);
-	background: none;
+    color: rgb(69, 0, 72);
+    background: none;
 }
 
 a strong {
@@ -72,8 +72,8 @@ h1 {
 
 h2 {
     border-top: 1px dotted #333333;
-	padding-top: 1.1rem;
-	margin-top: 1.5rem;
+    padding-top: 1.1rem;
+    margin-top: 1.5rem;
     font-size: 1.5rem;
 }
 
@@ -98,7 +98,7 @@ ol ul,
 ul ol,
 ol ol
 {
-	margin-bottom: 0rem;
+    margin-bottom: 0rem;
 }
 
 hr {
@@ -106,7 +106,7 @@ hr {
     margin: 0 0;
     border: 0;
     border-top: 1px dotted #000000;
-	margin-bottom: .8rem;
+    margin-bottom: .8rem;
 }
 
 abbr {
@@ -127,7 +127,7 @@ pre {
 }
 
 pre code {
-	margin: 0;
+    margin: 0;
     padding: 0;
     font-size: 100%;
     color: inherit;
@@ -141,7 +141,7 @@ pre span {
 
 .highlight {
     margin: 0;
-	padding: 0;
+    padding: 0;
 }
 
 .highlight pre {
@@ -149,34 +149,34 @@ pre span {
 }
 
 .highlighttable {
-	border: none;
-	overflow: hidden;
-	display: block;
-	width: 100%;
+    border: none;
+    overflow: hidden;
+    display: block;
+    width: 100%;
 }
 
 .highlighttable tbody {
-	display: block;
-	width: 100%;
-	background: #333333;
+    display: block;
+    width: 100%;
+    background: #333333;
 }
 
 .highlighttable tr {
-	display: block;
+    display: block;
     width: 100%;
 }
 
 blockquote {
     margin: 0;
-	border-left: .4rem solid #444444;
-	padding: .2rem;
-	margin-left: 1rem;
-	padding-left: .5rem;
-	margin-bottom: 0.8rem;
+    border-left: .4rem solid #444444;
+    padding: .2rem;
+    margin-left: 1rem;
+    padding-left: .5rem;
+    margin-bottom: 0.8rem;
 }
 
 blockquote p:first-child {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 blockquote p:last-child {
@@ -187,37 +187,37 @@ img {
     display: block;
     max-width: 100%;
     border-radius: 5px;
-	text-align: center;
-	margin: 0;
-	margin-left: auto;
+    text-align: center;
+    margin: 0;
+    margin-left: auto;
     margin-right: auto;
 }
 
 img.half-width {
-	width: auto; 
+    width: auto; 
 }
 
 @media (min-width: 512px) {
-	img.half-width {
-		width: 50% !important;
-	}
+    img.half-width {
+        width: 50% !important;
+    }
 }
 
 em.table-caption,
 em.caption { 
-	display: block;
+    display: block;
     max-width: 100%;
-	font-size: 0.9em;
-	margin: 0;
-	margin-left: auto;
+    font-size: 0.9em;
+    margin: 0;
+    margin-left: auto;
     margin-right: auto;
-	margin-top: -0.4rem;
-	margin-bottom: 0.5rem;
-	text-align: center;
+    margin-top: -0.4rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 em.table-caption {
-	margin-top: -0.9rem;
+    margin-top: -0.9rem;
 }
 
 table {
@@ -281,11 +281,11 @@ tbody tr:nth-child(odd) th {
     font-weight: bold;
     text-align: right;
     display: block;
-	width: 10em;
-	border-top: 2px dotted rgba(255, 255, 255, 0.9);
-	border-bottom: 2px dotted rgba(255, 255, 255, 0.9);
-	background: rgb(69, 0, 72);	
-	color: #FFFFFF;		
+    width: 10em;
+    border-top: 2px dotted rgba(255, 255, 255, 0.9);
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.9);
+    background: rgb(69, 0, 72);	
+    color: #FFFFFF;		
 }
 
 .pagination {
@@ -301,7 +301,7 @@ tbody tr:nth-child(odd) th {
     display: block;
     padding: .5rem;
     border: 5px solid white;
-	background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .pagination-item a {
@@ -439,65 +439,65 @@ div.blockcontent {
 
 .post-content {
     margin: 1rem;
-	text-align: justify;
+    text-align: justify;
     text-justify: auto;
 }
 
 sup { 
-	vertical-align: top; 
-	font-size: 0.7em;
-	margin-left: 0.1em;
+    vertical-align: top; 
+    font-size: 0.7em;
+    margin-left: 0.1em;
 }
 
 td.linenos {
-	border: none;
-	width: 1.5em;
-	padding: 0;
-	padding-right: 0.25em;
-	margin: 0;
-	border-right: 2px dotted #F9f9f9;
-	text-align: right;
-	background: #333333 !important;
-	color: #FFFFFF;
-	float:left;
+    border: none;
+    width: 1.5em;
+    padding: 0;
+    padding-right: 0.25em;
+    margin: 0;
+    border-right: 2px dotted #F9f9f9;
+    text-align: right;
+    background: #333333 !important;
+    color: #FFFFFF;
+    float:left;
 }
 
 div.linenodiv {
-	width: 1.25em;
+    width: 1.25em;
 }
 
 td.linenos pre {
-	background: #333333;
-	margin: 0;
-	padding: 0;
+    background: #333333;
+    margin: 0;
+    padding: 0;
 }
 
 span.math {
-	padding: 0;
+    padding: 0;
 }
 
 div.MathJax_Display {
-	margin: 0;
-	margin-bottom: 0.5rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
 }
 
 div.footnote p {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 td.code {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     font-size: 85%;
-	overflow: hidden;
-	display: block;
-	width: auto;
-	border: 1px solid #f9f9f9;
+    overflow: hidden;
+    display: block;
+    width: auto;
+    border: 1px solid #f9f9f9;
 }
 
 pre {
     display: block;
-	margin: 0;
+    margin: 0;
     padding: 0;
     font-size: 11pt;
     line-height: 1.4;
@@ -505,12 +505,12 @@ pre {
 }
 
 div.highlight {
-	overflow-x: auto;
-	padding-left: .3rem;
+    overflow-x: auto;
+    padding-left: .3rem;
 }
 
 a.main-link {
-	color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 div.block a span {
@@ -522,41 +522,73 @@ div.block a span {
 }
 
 div.block div.sidebarnav a {
-	display: block;
-	border-top: 2px dotted rgba(255, 255, 255, 0.9);
-	border-bottom: 2px dotted rgba(255, 255, 255, 0.9);
-	background: rgb(69, 0, 72);	
-	color: #FFFFFF;	
-	margin: .3rem;
-	margin-left: .7rem;
-	padding: .3rem;
-	padding-left: 1.5rem;
-	font-size: 14pt;
-	text-align: left;
-	font-family: "Computer Modern Sans", sans;
-	font-size: 16pt;
+    display: block;
+    border-top: 2px dotted rgba(255, 255, 255, 0.9);
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.9);
+    background: rgb(69, 0, 72);	
+    color: #FFFFFF;	
+    margin: .3rem;
+    margin-left: .7rem;
+    padding: .3rem;
+    padding-left: 1.5rem;
+    font-size: 14pt;
+    text-align: left;
+    font-family: "Computer Modern Sans", sans;
+    font-size: 16pt;
 }
 
 div.block div.sidebarnav {
-	margin-top: .5rem;
+    margin-top: .5rem;
 }
 
 div.post-tags {
-	text-align: right;
-	margin-bottom: -0.5rem;
-	margin-top: 0.5rem;
+    text-align: right;
+    margin-bottom: -0.5rem;
+    margin-top: 0.5rem;
 }
 
 span.caps {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
+}
+
+div.post-content a.permalink {
+    background: none;
+}
+
+#isso-thread .isso-postbox > .form-wrapper > .auth-section .post-action > input {
+    background-color: rgb(69, 0, 72);
+}
+
+#isso-thread .isso-postbox > .form-wrapper > .auth-section .input-wrapper input {
+    color: #000000;
+}
+
+#isso-thread .isso-postbox > .form-wrapper > .auth-section .input-wrapper input[name="website"]  {
+    display: none;
+}
+
+#isso-thread h4 {
+    display: none;
+}
+
+#isso-thread span {
+    padding: 0;
+}
+
+#isso-thread span.spacer {
+    padding: 0 0.3rem;
+}
+
+div.isso-postbox {
+    margin-bottom: 0;
 }
 
 @media (min-width: 60em) {
     html {
         font-size: 16px;
     }
-	
+    
     .post-content {
         margin-top: 1.5rem;
     }
