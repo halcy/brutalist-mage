@@ -541,7 +541,8 @@ div.block div.sidebarnav {
     margin-top: .5rem;
 }
 
-div.post-tags {
+p.closing {
+    display: block;
     text-align: right;
     margin-bottom: -0.5rem;
     margin-top: 0.5rem;
@@ -582,6 +583,30 @@ div.post-content a.permalink {
 
 div.isso-postbox {
     margin-bottom: 0;
+}
+
+table.meta-data, 
+table.meta-data tr,
+table.meta-data td,
+table.meta-data tr:nth-child(2n+1) td {
+	border: none;
+	background: none;
+	font-size: 12pt;
+}
+
+table.meta-data {
+	margin-top: 1rem;
+	margin-bottom: -0.3rem;
+	border-left: 5px solid rgb(69, 0, 72);
+}
+
+tr td.meta-head {
+	width: 6rem;
+	text-align: right;
+	vertical-align: top;
+	font-style: italic;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 @media (min-width: 60em) {
